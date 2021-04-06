@@ -396,7 +396,7 @@ header {
     z-index: 2;
 }
 
-.portfolio-img:hover, .portfolio__item:focus .portfolio__img {
+.portfolio-img:hover, .portfolio-item:focus .portfolio-img {
     transform: scale(1.05);
     opacity: .5;
 }
@@ -418,7 +418,7 @@ header {
     font-weight: var(--fw-bold);
 }
 
-.footer-link:hover, .social-list__link:hover {
+.footer-link:hover, .social-list--link:hover {
     opacity: .7;
 }
 
