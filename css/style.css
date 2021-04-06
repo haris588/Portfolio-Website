@@ -300,13 +300,13 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 3em auto;
 }
 
 @media (min-width: 600px) {
     .skills {
-        max-width: 1000px;
+       width:1000px;
     }
 }
 
