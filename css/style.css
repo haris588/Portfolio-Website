@@ -128,6 +128,7 @@ h3 {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
+    
 }
 
 i {
@@ -341,10 +342,9 @@ header {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
-        left: -1em;
-        width: 108%;
-        padding-left: 1em;
-        padding-right: 15em
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 2em
     }
     .about-me-img {
         grid-area: img;
