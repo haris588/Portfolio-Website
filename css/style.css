@@ -321,12 +321,16 @@ header {
     object-fit: cover;
     margin: 0 auto;
 }
+
 .section-title--about {
     text-align: center;
 }
-.section-subtitle--about{
+
+.section-subtitle--about {
     text-align: center;
+    font-size: 1rem;
 }
+
 .about-me-body a {
     color: var(--clr-accent);
     text-decoration: none;
@@ -338,20 +342,21 @@ header {
         flex-direction: column;
         max-width: 800px;
     }
-  
-    .section-subtitle--projects {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        width: 100%;
-        padding-left: 2em;
-        padding-right: 2em
-    }
-    .about-me-img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
+}
+
+.section-subtitle--projects {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em
+}
+
+.about-me-img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
 }
 
 .my-projects {
