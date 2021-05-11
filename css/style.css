@@ -304,12 +304,6 @@ header {
     margin: 3em auto;
 }
 
-@media (min-width: 600px) {
-    .skills {
-        width: 1000px;
-    }
-}
-
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
