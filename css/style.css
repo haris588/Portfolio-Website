@@ -301,7 +301,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin: 3em auto;
+    margin: 3em auto;   
     max-width: 1000px;
 }
 
