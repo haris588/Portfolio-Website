@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
-    <title>haris588 Portfolio Website</title>
+    <title>Haroldas Zvicevičius | Portfolio Website</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="devharis">
-        </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
@@ -31,22 +28,37 @@
         <h1 class="section-title section-title--intro">
             Hi, I am <strong>Haroldas</strong> <strong>Zvicevičius</strong>
         </h1>
-        <p class="section-subtitle section-subtitle--intro">front-end dev</p>
+        <p class="section-subtitle section-subtitle--intro">Junior Front-End Dev</p>
         <img src="img/photo1.jpg" alt="A photo of Haroldas" class="intro-img">
     </section>
 
     <section class="my-skills" id="skills">
         <h2 class="section-title section-title--skills">Skills</h2>
         <div class="skills">
-            <i class="fab fa-html5 fa-3x"></i>
-            <i class="fab fa-css3-alt fa-3x"></i>
-            <i class="fab fa-sass fa-3x"></i>
-            <i class="fab fa-js fa-3x"></i>
-            <i class="fab fa-react fa-3x"></i>
-            <i class="fab fa-git fa-3x"></i>
-            <i class="fab fa-github fa-3x"></i>
-            <i class="fas fa-terminal fa-3x"></i>
-
+            <div class="technology">
+                <img src="img/svg/html.svg" alt="HTML5" />
+                <span>HTML</span>
+            </div>
+            <div class="technology">
+                <img src="img/svg/css.svg" alt="CSS3"/>
+                <span>CSS</span>
+            </div>
+            <div class="technology">
+                <img src="img/svg/sass.svg" alt="SASS"/>
+                <span>SASS</span>
+            </div>
+            <div class="technology">
+                <img src="img/svg/js.svg" alt="JavaScript"/>
+                <span>JavaScript</span>
+            </div>
+            <div class="technology">
+                <img src="img/svg/react.svg" alt="React"/>
+                <span>React</span>
+            </div>
+            <div class="technology">
+                <img src="img/svg/github.svg" alt="GitHub"/>
+                <span>GitHub</span>
+            </div>
         </div>
 
         <a href="#projects" class="btn">My Projects</a>
@@ -58,151 +70,469 @@
 
         <div class="about-me-body">
             <p>Hi there,</p>
-            <p>I am a self-motivated front-end developer that loves to build web apps as a hobby & currently looking for
-                opportunities to challenge myself and grow as a developer. I've built 15+ projects using JavaScript,
-                CSS, HTML, React & other front-end technologies, completed <a href="https://www.codecademy.com/"
-                    target=_blank>Codecademy </a> & <a href="https://scrimba.com/" target=_blank>Scrimba</a>
-                front-end development bootcamps.
+            <p>I am a self-motivated junior Front-End developer that loves to build web apps as a hobby & currently
+                looking for opportunities to challenge myself and grow as a developer. I've built 15+ projects using
+                JavaScript,
+                CSS, HTML, React & other Front-End technologies, completed <a
+                    href="https://www.codecademy.com/">Codecademy</a> & <a href="https://scrimba.com/">Scrimba</a>
+                Front-End development
+                bootcamps.
+            </p>
         </div>
 
     </section>
 
     <section class="my-projects" id="projects">
         <h2 class="section-title section-title--projects">My Projects</h2>
-        <p class="section-subtitle section-subtitle--projects">A selection of my React / other misc. projects</p>
+        <p class="section-subtitle section-subtitle--projects">A selection of my projects</p>
 
         <div class="portfolio">
             <div class="portfolio-item-container">
-                <img src="img/beerium.png" alt="Beerium" class="portfolio-img">
-                <a href="https://github.com/haris588/React-beerium" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://beerium-haris588.netlify.app" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i>
-                </a>
+                <h3 class="portfolio-item--title">BEERIUM</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/beerium.png" alt="Beerium" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Beerium is an e-shop app built in React while following a compound component design pattern,
+                    prioritizing reusability. Styled with styled components. Used Punk API to receive beer data.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/react.svg" />
+                        <span>React</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/React-beerium" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://beerium-haris588.netlify.app" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/movie-search.jpg" alt="movie-search" class="portfolio-img">
-                <a href="https://github.com/haris588/React-movie-search" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://movie-search-haris588.netlify.app/" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i>
-                </a>
+                <h3 class="portfolio-item--title">Movie Search</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/movie-search.png" alt="Movie Search" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Movie search is an app built in React while following a compound component design pattern,
+                    prioritizing reusability. Styled with styled components. Used tmdb API to receive movie data.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/react.svg" />
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/React-movie-search" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://movie-search-haris588.netlify.app/" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/jammming-img.png" alt="jammming" class="portfolio-img">
-                <a href="https://github.com/haris588/React-Jammming" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://jammming-haris588.netlify.app" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i> </a>
+                <h3 class="portfolio-item--title">Jammming</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/jammming-img.png" alt="Jammming" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    This app allows the user to create playlists, add / remove songs in their Spotify account. Built in
+                    React.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/react.svg" />
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/React-Jammming" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://jammming-haris588.netlify.app" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/speed-typing-img.png" alt="speed typing game" class="portfolio-img">
-                <a href="https://github.com/haris588/React-speed-typing-game" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://speed-typing-game-haris588.netlify.app" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i>
-                </a>
+                <h3 class="portfolio-item--title">Speed Typing Game</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/speed-typing-img.png" alt="Speed typing game" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Speed typing game built in React using hooks.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/react.svg" />
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/React-speed-typing-game" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://speed-typing-game-haris588.netlify.app" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/mini-movie-db-img.png" alt="Mini Movie Database" class="portfolio-img">
-                <a href="https://github.com/haris588/React-mini-movie-search" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://mini-movie-search-haris588.netlify.app
+                <h3 class="portfolio-item--title">Mini Movie Search</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/mini-movie-db-img.png" alt="Mini Movie Search project" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    This app allows the user to search for movies, tv series, etc. and find information about them.
+                    Built in React, retrieving movie information data from the OMDb API.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
 
-                " target=_blank> <i class="fas fa-external-link-square-alt fa-2x"></i>
-                </a>
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/react.svg" />
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/React-mini-movie-search" target=_blank> <img
+                            src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://mini-movie-search-haris588.netlify.app" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-item-container">
+                <h3 class="portfolio-item--title">Currency Converter</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/currency-converter-img.png" alt="Currency Converter project"
+                        class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Currency Converter converts currency from one to another based on the latest exchange rates provided
+                    by the ExchangeRate-API.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/currency-converter" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://haris588.github.io/currency-converter/" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/currency-converter-img.png" alt="currency-converter" class="portfolio-img">
-                <a href="https://github.com/haris588/currency-converter" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://haris588.github.io/currency-converter/" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i> </a>
+                <h3 class="portfolio-item--title">Timer</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/JS-timer-img.png" alt="JavaScript timer project" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Timer built using JavaScript
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/JS-timer" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://haris588.github.io/JS-timer/" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/JS-timer-img.png" alt="javascript timer" class="portfolio-img">
-                <a href="https://github.com/haris588/JS-timer" target=_blank> <i class="fab fa-github fa-2x"></i></a>
-                <a href="https://haris588.github.io/JS-timer/" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i>
-                </a>
+                <h3 class="portfolio-item--title">Meme Generator</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/meme-generator-img.png" alt="Meme generator project" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Meme generator is an app made in React using react hooks. It calls the Meme generator API to display
+                    a random meme on the screen with the ability to add a title to it.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/react.svg" />
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/meme-generator-hooks" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://meme-generator-haris588.netlify.app" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/meme-generator-img.png" alt="meme generator" class="portfolio-img">
-                <a href="https://github.com/haris588/meme-generator-hooks" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://meme-generator-haris588.netlify.app" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i> </a>
+                <h3 class="portfolio-item--title">Frame</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/frame-img.png" alt="simple modal project" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Simple website with a modal
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/Frame" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://haris588.github.io/Frame/" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/frame-img.png" alt="frame" class="portfolio-img">
-                <a href="https://github.com/haris588/Frame" target=_blank> <i class="fab fa-github fa-2x"></i></a>
-                <a href="https://haris588.github.io/Frame/" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i> </a>
+                <h3 class="portfolio-item--title">Programming Jokes</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/programming-jokes-img.png" alt="Programming jokes project"
+                        class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    This app calls official-joke-api and renders a random joke and its punchline to the screen.
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="technology">
+                        <img src="img/svg/js.svg" />
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/programming-jokes-app" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://haris588.github.io/programming-jokes-app/" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/programming-jokes-img.png" alt="programming jokes" class="portfolio-img">
-                <a href="https://github.com/haris588/programming-jokes-app" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://haris588.github.io/programming-jokes-app/" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i> </a>
+                <h3 class="portfolio-item--title">Blog-like website</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/blog-like-img.png" alt="Blog-like website project" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Simple blog-like website
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/blog-like-website" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://haris588.github.io/blog-like-website/" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
 
             <div class="portfolio-item-container">
-                <img src="img/blog-like-img.png" alt="blog-like website" class="portfolio-img">
-                <a href="https://github.com/haris588/blog-like-website" target=_blank> <i
-                        class="fab fa-github fa-2x"></i></a>
-                <a href="https://haris588.github.io/blog-like-website/" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i> </a>
+                <h3 class="portfolio-item--title">Landing</h3>
+                <div class="portfolio-images--container">
+                    <img src="img/excursion-img.png" alt="Simple Promotional project" class="portfolio-item--img">
+                </div>
+                <p class="portfolio-item--description">
+                    Simple landing page
+                </p>
+                <div class="portfolio-item--technologies">
+                    <div class="technology">
+                        <img src="img/svg/html.svg" />
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="technology">
+                        <img src="img/svg/css.svg" />
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="portfolio-item--links">
+                    <a href="https://github.com/haris588/excursion" target=_blank>
+                        <img src="img/svg/github.svg" alt="link to github" />
+                    </a>
+                    <a href="https://haris588.github.io/excursion/" target=_blank>
+                        <img src="img/svg/link.svg" alt="link to the projects webpage" />
+                    </a>
+                </div>
             </div>
-
-            <div class="portfolio-item-container">
-                <img src="img/excursion-img.png" alt="excursion" class="portfolio-img">
-                <a href="https://github.com/haris588/excursion" target=_blank> <i class="fab fa-github fa-2x"></i></a>
-                <a href="https://haris588.github.io/excursion/" target=_blank> <i
-                        class="fas fa-external-link-square-alt fa-2x"></i>
-                </a>
-            </div>
-
-
-
-
 
         </div>
     </section>
 
     <footer class="footer" id="contacts">
-        <a href="mailto:haroldas.zvicevicius@gmail.com" class="footer-link"
-            target=_blank>haroldas.zvicevicius@gmail.com</a>
+        <a href="mailto:haroldas.zvicevicius@gmail.com" class="footer-link">
+            haroldas.zvicevicius@gmail.com</a>
         <ul class="social-list">
             <li class="social-list--item">
                 <a class="social-list--link" href="https://www.facebook.com/haroldas.zvicevicius/" target=_blank>
-                    <i class="fab fa-facebook fa-lg"></i>
+                    <img src="img/svg/linkedin.svg" alt="link to the linkedin profile">
                 </a>
             </li>
             <li class="social-list--item">
                 <a class="social-list--link" href="https://www.linkedin.com/in/haroldas-zvicevicius/" target=_blank>
-                    <i class="fab fa-linkedin  fa-lg"></i>
+                    <img src="img/svg/facebook.svg" alt="link to the facebook profile">
                 </a>
             </li>
             <li class="social-list--item">
                 <a class="social-list--link" href="https://github.com/haris588" target=_blank>
-                    <i class="fab fa-github fa-lg"></i>
+                    <img src="img/svg/github.svg" alt="link to the github profile">
                 </a>
             </li>
         </ul>
     </footer>
 
     <script src="js/index.js"></script>
-    <script src="https://kit.fontawesome.com/e3384096b2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
