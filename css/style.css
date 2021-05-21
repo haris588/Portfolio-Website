@@ -452,7 +452,7 @@ header {
     padding: 0 1em;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 820px) {
     .portfolio-item--description {
         min-height: auto;
     }
@@ -549,16 +549,10 @@ header {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 2em 0;
     font-size: var(--fs-h3);
+    margin: 0 auto;
 }
-
-.footer a {
-    color: inherit;
-    text-decoration: none;
-    transition: transform ease 800ms;
-}
-
 footer img {
     width: 50px;
     height: 50px;
@@ -570,6 +564,10 @@ footer img {
 
 .footer-link {
     font-weight: var(--fw-bold);
+    color: inherit;
+    text-decoration: none;
+    transition: transform ease 800ms;
+    word-wrap: break-word;
 }
 
 .footer-link:hover, .social-list--link:hover {
@@ -584,7 +582,7 @@ footer img {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 2em 0 0 0;
     padding: 0;
 }
 
