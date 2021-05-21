@@ -40,6 +40,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    letter-spacing: 1px;
 }
 
 section {
@@ -230,6 +231,7 @@ header {
     height: 350px;
     object-fit: cover;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .section-subtitle--intro {
@@ -375,12 +377,6 @@ header {
     padding-right: 2em
 }
 
-.about-me-img {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
-}
-
 .my-projects {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -427,7 +423,8 @@ header {
 .portfolio-item--img {
     object-fit: cover;
     object-position: top;
-    height: 20em;
+    width: 100%;
+    height: 15em;
 }
 
 @media (max-width: 760px) {
@@ -447,7 +444,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 150px;
+    min-height: 145px;
     color: var(--clr-dark);
     padding: 0 1em;
 }
@@ -511,7 +508,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
 }
 
 .portfolio-item--links::before {
