@@ -470,7 +470,7 @@ header {
     align-items: center;
     flex-direction: row;
     position: relative;
-    padding: 1em;
+    padding: 0 0.2em 1em 0.2em;
     transition: all ease 800ms;
 }
 
