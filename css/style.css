@@ -649,7 +649,12 @@ header {
     border-bottom-right-radius: 15px;
 }
 
-.technology:hover .technology-name.html {
+.technology:hover .technology-name.html.left {
+    opacity: 1;
+    background: #F66B3C;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
+}
+.technology:hover .technology-name.html.right {
     opacity: 1;
     background: #F66B3C;
     transition: opacity 700ms ease, left 250ms ease-in-out;
