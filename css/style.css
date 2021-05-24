@@ -816,6 +816,7 @@ footer img {
 
 .footer-link:hover {
     font-size: var(--ff-primary);
+    text-decoration: underline;
 }
 
 .footer-title {
