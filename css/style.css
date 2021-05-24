@@ -499,6 +499,8 @@ header {
 .portfolio-item--img {
     object-fit: cover;
     object-position: top;
+    border-radius: 7px;
+    box-shadow: var(--bs);
     width: 100%;
     height: 20rem;
 }
