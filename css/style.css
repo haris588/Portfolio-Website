@@ -351,7 +351,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 @media (max-width: 760px) {
@@ -384,11 +384,11 @@ header {
     opacity:0;
     transition: transform 1s, opacity 1s;
     transform: translateX(-50%);
-    margin: 1em;
+    margin: 0.5em;
 }
 
 .about-me-img--container {
-    margin: 1em;
+    margin: 0.5em;
     opacity: 0;
     transition: transform 1s, opacity 1s;
     transform: translateX(50%);
