@@ -799,8 +799,8 @@ header {
 }
 
 footer img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .footer img:hover {
@@ -809,14 +809,12 @@ footer img {
 
 .footer-link {
     font-weight: var(--fw-bold);
-    color: inherit;
     text-decoration: none;
+    color: var(--clr-dark);
     transition: transform ease 250ms;
-    word-wrap: break-word;
 }
 
 .footer-link:hover {
-    font-size: var(--fs-body);
     text-decoration: underline;
 }
 
