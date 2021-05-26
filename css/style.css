@@ -777,8 +777,8 @@ header {
 }
 
 .portfolio-item--links img {
-    max-height: 40px;
-    max-width: 40px;
+    max-height: 33px;
+    max-width: 33px;
 }
 
 .portfolio-item--links a:hover {
