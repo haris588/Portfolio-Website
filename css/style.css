@@ -264,7 +264,7 @@ header {
     opacity: 1;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     .intro {
         display: grid;
         width: min-content;
@@ -336,6 +336,12 @@ header {
     z-index: 2;
 }
 
+@media (max-width: 650px) {
+    .skills {
+        max-width: 300px;
+    }
+}
+
 .skills img {
     width: 8rem;
     height: 8rem;
@@ -381,7 +387,7 @@ header {
 }
 
 .about-me-body {
-    opacity:0;
+    opacity: 0;
     transition: transform 1s, opacity 1s;
     transform: translateX(-50%);
     margin: 0.5em;
@@ -392,9 +398,9 @@ header {
     opacity: 0;
     transition: transform 1s, opacity 1s;
     transform: translateX(50%);
-  
 }
-.about-me-img--container img { 
+
+.about-me-img--container img {
     object-fit: contain;
     border-radius: 7px;
     max-height: 350px;
@@ -417,7 +423,7 @@ header {
     }
     .about-me-img--container {
         transform: translateX(50%);
-        transition: transform 1s,opacity 1s;
+        transition: transform 1s, opacity 1s;
         border-radius: 7px;
         box-shadow: var(--bs);
         margin: 1em;
@@ -573,8 +579,6 @@ header {
     bottom: -1em;
     background: var(--clr-accent);
 }
-
-
 
 .skills .technology {
     width: 7rem;
