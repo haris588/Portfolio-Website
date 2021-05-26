@@ -22,7 +22,7 @@ const animatePhoto = () => {
 const animateAboutMe = () => {
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-    if (currentScroll >= 550 && currentScroll <= 1450) {
+    if (currentScroll >= 550 && currentScroll <= 1700) {
       document.querySelector('.about-me-body').classList.add('toRight')
       document.querySelector('.about-me-img--container').classList.add('toLeft')
     }
@@ -33,5 +33,5 @@ const animateAboutMe = () => {
   });
 }
 
-animatePhoto()
 animateAboutMe()
+animatePhoto()
