@@ -22,7 +22,7 @@ const animatePhoto = () => {
 const animateAboutMe = () => {
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-    if (currentScroll >= 550 && currentScroll <= 1700) {
+    if (currentScroll >= 550 && currentScroll <= 1850) {
       document.querySelector('.about-me-body').classList.add('toRight')
       document.querySelector('.about-me-img--container').classList.add('toLeft')
     }
