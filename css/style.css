@@ -189,7 +189,7 @@ header {
     font-size: var(--fs-h2);
     text-decoration: none;
 }
-@media (max-height: 300px){
+@media (max-height: 500px){
     .nav-link {
     font-size: var(--fs-body);;
     }
