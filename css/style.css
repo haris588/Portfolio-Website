@@ -12,7 +12,7 @@
     --fw-bold: 900;
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #f7c72b;
+    --clr-accent: #fcd600;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -384,7 +384,7 @@ header {
 }
 
 .about-me-body a {
-    color: var(--clr-accent);
+    color: rgb(55, 0, 255);
     text-decoration: none;
 }
 
@@ -544,7 +544,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 0.5em 3em;
+    padding: 0.5em 1.3em;
 }
 
 .left {
@@ -703,12 +703,12 @@ header {
 }
 
 .technology-name {
-    color: #000;
+    color: var(--clr-dark);
     position: absolute;
     padding: 0.5em 0.8em;
     opacity: 0;
     z-index: 50;
-    font-weight: var(--fw-bold);
+    font-weight: 700;
 }
 
 .technology-name.github {
