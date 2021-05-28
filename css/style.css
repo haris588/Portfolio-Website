@@ -404,6 +404,8 @@ header {
     opacity: 0;
     transition: transform 1s, opacity 1s;
     transform: translateX(50%);
+    text-align: center;
+    position: relative;
 }
 
 .about-me-img--container img {
@@ -413,6 +415,23 @@ header {
     max-width: 350px;
 }
 
+.about-me-img--container span {
+    position: absolute;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    box-shadow: var(--bs);
+    border-radius: 7px;
+    margin: 0.5em auto;
+   opacity: 0;
+   left: 0;
+   right: 0;
+   transform: translateY(-50%);
+   transition: transform 250ms, opacity 250ms;
+}
+.about-me-img--container:hover span {
+    opacity: 1;
+    transform: translateY(0%);
+}
 @media (min-width: 600px) {
     .about-me {
         display: flex;
