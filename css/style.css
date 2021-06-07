@@ -665,6 +665,17 @@ header {
     z-index: -1;
 }
 
+.technology.ts::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #517cf3;
+    border-radius: 50%;
+    z-index: -1;
+}
 .technology.css::before {
     content: "";
     position: absolute;
@@ -722,7 +733,7 @@ header {
 }
 
 .technology-name {
-    color: var(--clr-dark);
+    color: var(--clr-light);
     position: absolute;
     padding: 0.5em 0.8em;
     opacity: 0;
@@ -730,8 +741,11 @@ header {
     font-weight: 700;
 }
 
-.technology-name.github {
-    color: var(--clr-light);
+.technology-name.js {
+    color: var(--clr-dark);
+}
+.technology-name.react {
+    color: var(--clr-dark);
 }
 
 .technology-name.left {
@@ -760,6 +774,12 @@ header {
     opacity: 1;
     background: #52b1e0;
     transition: opacity 700ms ease, left 200ms ease-in-out;
+}
+
+.technology:hover .technology-name.ts {
+    opacity: 1;
+    background: #517cf3;
+    transition: opacity 700ms ease, right 200ms ease-in-out;
 }
 
 .technology:hover .technology-name.js {
