@@ -35,6 +35,3 @@ const animateAboutMe = () => {
 
 animateAboutMe()
 animatePhoto()
-
-const example1 = ['Hello World'];
-console.log(example1)
