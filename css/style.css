@@ -337,14 +337,14 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 2em auto;
     max-width: 1000px;
     position: relative;
     z-index: 2;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .skills {
         max-width: 350px;
     }
@@ -569,6 +569,11 @@ header {
     margin: 0 auto;
     padding: 0.5em 1.3em;
 }
+@media (max-width: 400px){
+    .portfolio-item--technologies {
+        max-width: 80%;
+    }
+}
 
 .left {
     right: 0;
@@ -730,7 +735,6 @@ header {
 }
 
 .portfolio-item--technologies .technology-name {
-    color:var(--clr-light);
     position: absolute;
     font-size: 0.8rem;
     opacity: 0;
@@ -738,8 +742,7 @@ header {
 }
 
 .technology-name {
-    color: rgba(255, 255, 255, 1);
-    text-shadow: 2px 1px 3px #000;
+    color: #000;
     position: absolute;
     padding: 0.5em 0.8em;
     opacity: 0;
@@ -747,7 +750,9 @@ header {
     font-weight: 700;
     font-size: 1rem;
 }
-
+.technology-name.github {
+    color: #fff;
+}
 .technology-name.left {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -791,7 +796,7 @@ header {
 .my-skills .technology:hover .technology-name.js {
     opacity: 1;
     background: #F0DB4F;
-    transition: opacity 700ms ease, right 250ms ease-in-out;
+    transition: opacity 700ms ease, left 250ms ease-in-out;
 }
 
 .technology:hover .technology-name.react {
@@ -803,13 +808,13 @@ header {
 .technology:hover .technology-name.sass {
     opacity: 1;
     background: #c96393;
-    transition: opacity 700ms ease, left 250ms ease-in-out;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
 }
 
 .technology:hover .technology-name.github {
     opacity: 1;
     background: #111;
-    transition: opacity 700ms ease, left 250ms ease-in-out;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
 }
 
 .portfolio-item--links {
