@@ -733,7 +733,8 @@ header {
 }
 
 .technology-name {
-    color: var(--clr-light);
+    color: rgba(255,255,255,1);
+    text-shadow: 2px 1px 3px #000;
     position: absolute;
     padding: 0.5em 0.8em;
     opacity: 0;
@@ -741,12 +742,6 @@ header {
     font-weight: 700;
 }
 
-.technology-name.js {
-    color: var(--clr-dark);
-}
-.technology-name.react {
-    color: var(--clr-dark);
-}
 
 .technology-name.left {
     border-top-left-radius: 15px;
@@ -841,7 +836,7 @@ header {
     background: var(--clr-light);
     color: var(--clr-dark);
     text-align: center;
-    padding: 2em 0;
+    padding: 1em 1em 0.2em 0;
     font-size: var(--fs-h3);
     margin: 0 auto;
     border: 1px solid #000;
