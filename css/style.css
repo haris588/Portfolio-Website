@@ -189,9 +189,11 @@ header {
     font-size: var(--fs-h2);
     text-decoration: none;
 }
-@media (max-height: 500px){
+
+@media (max-height: 500px) {
     .nav-link {
-    font-size: var(--fs-body);;
+        font-size: var(--fs-body);
+        ;
     }
 }
 
@@ -422,16 +424,18 @@ header {
     box-shadow: var(--bs);
     border-radius: 7px;
     margin: 0.5em auto;
-   opacity: 0;
-   left: 0;
-   right: 0;
-   transform: translateY(-50%);
-   transition: transform 250ms, opacity 250ms;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    transition: transform 250ms, opacity 250ms;
 }
+
 .about-me-img--container:hover span {
     opacity: 1;
     transform: translateY(0%);
 }
+
 @media (min-width: 600px) {
     .about-me {
         display: flex;
@@ -676,6 +680,7 @@ header {
     border-radius: 50%;
     z-index: -1;
 }
+
 .technology.css::before {
     content: "";
     position: absolute;
@@ -725,7 +730,7 @@ header {
 }
 
 .portfolio-item--technologies .technology-name {
-    color: var(--clr-dark);
+    color:var(--clr-light);
     position: absolute;
     font-size: 0.8rem;
     opacity: 0;
@@ -733,15 +738,15 @@ header {
 }
 
 .technology-name {
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     text-shadow: 2px 1px 3px #000;
     position: absolute;
     padding: 0.5em 0.8em;
     opacity: 0;
     z-index: 50;
     font-weight: 700;
+    font-size: 1rem;
 }
-
 
 .technology-name.left {
     border-top-left-radius: 15px;
@@ -768,37 +773,43 @@ header {
 .technology:hover .technology-name.css {
     opacity: 1;
     background: #52b1e0;
-    transition: opacity 700ms ease, left 200ms ease-in-out;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
 }
 
 .technology:hover .technology-name.ts {
     opacity: 1;
     background: #517cf3;
-    transition: opacity 700ms ease, right 200ms ease-in-out;
+    transition: opacity 700ms ease, left 250ms ease-in-out;
 }
 
 .technology:hover .technology-name.js {
     opacity: 1;
     background: #F0DB4F;
-    transition: opacity 700ms ease, right 200ms ease-in-out;
+    transition: opacity 700ms ease, left 250ms ease-in-out;
+}
+
+.my-skills .technology:hover .technology-name.js {
+    opacity: 1;
+    background: #F0DB4F;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
 }
 
 .technology:hover .technology-name.react {
     opacity: 1;
     background: #75dbf0;
-    transition: opacity 700ms ease, left 200ms ease-in-out;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
 }
 
 .technology:hover .technology-name.sass {
     opacity: 1;
     background: #c96393;
-    transition: opacity 700ms ease, right 200ms ease-in-out;
+    transition: opacity 700ms ease, left 250ms ease-in-out;
 }
 
 .technology:hover .technology-name.github {
     opacity: 1;
     background: #111;
-    transition: opacity 700ms ease, right 200ms ease-in-out;
+    transition: opacity 700ms ease, left 250ms ease-in-out;
 }
 
 .portfolio-item--links {
@@ -836,7 +847,7 @@ header {
     background: var(--clr-light);
     color: var(--clr-dark);
     text-align: center;
-    padding: 1em 1em 0.2em 0;
+    padding: 1em;
     font-size: var(--fs-h3);
     margin: 0 auto;
     border: 1px solid #000;
@@ -856,6 +867,13 @@ footer img {
     text-decoration: none;
     color: var(--clr-dark);
     transition: transform ease 250ms;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .footer-link {
+        font-size: 1rem;
+    }
 }
 
 .footer-link:hover {
