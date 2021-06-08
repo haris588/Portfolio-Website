@@ -569,7 +569,8 @@ header {
     margin: 0 auto;
     padding: 0.5em 1.3em;
 }
-@media (max-width: 900px){
+
+@media (max-width: 900px) {
     .portfolio-item--technologies {
         max-width: 250px;
     }
@@ -741,6 +742,31 @@ header {
     z-index: 50;
 }
 
+.portfolio-item--technologies .technology:hover .technology-name.html.left {
+    opacity: 1;
+    background: #F66B3C;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
+}
+
+.portfolio-item--technologies .technology:hover .technology-name.css.right {
+    opacity: 1;
+    background: #52b1e0;
+    transition: opacity 700ms ease, left 250ms ease-in-out;
+}
+
+.portfolio-item--technologies .technology:hover .technology-name.js.left {
+    opacity: 1;
+    background: #F0DB4F;
+    transition: opacity 700ms ease, right 250ms ease-in-out;
+}
+
+
+.portfolio-item--technologies .technology:hover .technology-name.react.right {
+    opacity: 1;
+    background: #75dbf0;
+    transition: opacity 700ms ease, left 250ms ease-in-out;
+}
+
 .technology-name {
     color: #000;
     position: absolute;
@@ -750,9 +776,11 @@ header {
     font-weight: 700;
     font-size: 1rem;
 }
+
 .technology-name.github {
     color: #fff;
 }
+
 .technology-name.left {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
