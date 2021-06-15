@@ -444,7 +444,7 @@ header {
     }
     .about-me--container {
         max-width: 1400px;
-        margin: 5em auto 3em auto;
+        margin: 4em auto 1em auto;
         flex-direction: row;
       
     }
