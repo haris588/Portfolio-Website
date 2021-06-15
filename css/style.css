@@ -473,15 +473,6 @@ header {
     border-left: 25px solid var(--clr-dark);
 }
 
-@media (max-width: 1080px) {
-    .about-me {
-        border-left: 15px solid var(--clr-accent);
-    }
-    .bootcamps {
-        border-left: 15px solid var(--clr-dark);
-    }
-}
-
 .section-title--bootcamps {
     text-align: center;
 }
@@ -977,7 +968,8 @@ header {
     padding: 1em;
     font-size: var(--fs-h3);
     margin: 0 auto;
-    border: 1px solid #000;
+    max-width: 1400px;
+    border-right: 25px solid var(--clr-dark);
 }
 
 footer img {
@@ -1026,4 +1018,16 @@ footer img {
 
 .social-list--item:focus {
     outline: 3px solid var(--clr-accent);
+}
+
+@media (max-width: 1200px) {
+    .about-me {
+        border-left: 15px solid var(--clr-accent);
+    }
+    .bootcamps {
+        border-left: 15px solid var(--clr-dark);
+    }
+    .footer { 
+        border-right: 0;
+    }
 }
