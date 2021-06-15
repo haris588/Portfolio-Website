@@ -12,7 +12,7 @@ navLinks.forEach(link => {
   })
 })
 
-const animatePhoto = () => {
+const animateIntro= () => {
   window.addEventListener("load", () => {
     document.querySelector('.intro-img').classList.add('toTop')
     document.querySelector('.section-subtitle--intro').classList.add('width')
@@ -22,16 +22,23 @@ const animatePhoto = () => {
 const animateAboutMe = () => {
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-    if (currentScroll >= 550 && currentScroll <= 1850) {
+    if (currentScroll >= 750) {
       document.querySelector('.about-me-body').classList.add('toRight')
       document.querySelector('.about-me-img--container').classList.add('toLeft')
-    }
-    else {
-      document.querySelector('.about-me-body').classList.remove('toRight')
-      document.querySelector('.about-me-img--container').classList.remove('toLeft')
     }
   });
 }
 
+const animateCertifications = () => {
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll >= 1650) {
+      document.querySelector('.bootcamps--container-left').classList.add('toRight');
+      document.querySelector('.bootcamps--container-right').classList.add('toLeft');
+    }
+  });
+}
+
+animateIntro()
 animateAboutMe()
-animatePhoto()
+animateCertifications()
