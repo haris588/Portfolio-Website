@@ -134,17 +134,10 @@ h3 {
     border-radius: 7px;
 }
 
-.section-subtitle--intro, .section-subtitle--about, .section-subtitle--bootcamps {
+.section-subtitle--intro, .section-subtitle--about, .section-subtitle--bootcamps, .section-subtitle--projects {
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-}
-
-.section-subtitle--projects {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
 }
 
 header {
@@ -255,7 +248,7 @@ header {
     box-shadow: var(--bs);
     height: 350px;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 1em auto;
     border-radius: 7px;
 }
 
@@ -285,6 +278,7 @@ header {
         grid-area: img;
         min-width: 300px;
         position: relative;
+        margin: 0 auto;
         z-index: 2;
         transform: translateY(25%);
         opacity: 0;
@@ -363,10 +357,10 @@ header {
 }
 
 .about-me--container {
+    margin: 2em auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
 }
 
 @media (max-width: 1000px) {
@@ -400,11 +394,11 @@ header {
     opacity: 0;
     transition: transform 1s, opacity 1s;
     transform: translateX(-50%);
-    margin: 0.5em;
+    max-width: 550px;
 }
 
 .about-me-img--container {
-    margin: 0.5em;
+    margin: 1em auto;
     opacity: 0;
     transition: transform 1s, opacity 1s;
     transform: translateX(50%);
@@ -445,23 +439,25 @@ header {
         justify-content: center;
         align-items: center;
         max-width: 1400px;
+       
     }
     .about-me--container {
         max-width: 1400px;
-        margin: 2em auto;
+        margin: 3em auto 0 auto;
+      
     }
     .about-me-body {
         transform: translateX(-50%);
         transition: transform 1s, opacity 1s;
         max-width: 600px;
-        margin: 1em;
+        
     }
     .about-me-img--container {
         transform: translateX(50%);
         transition: transform 1s, opacity 1s;
         border-radius: 7px;
         box-shadow: var(--bs);
-        margin: 1em;
+        margin-left: 2em;
     }
 }
 
@@ -488,7 +484,7 @@ header {
 
 .bootcamps--container-left {
     max-width: 1400px;
-    margin: 2em auto;
+    margin: 3em auto 0 auto;
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -500,7 +496,7 @@ header {
 
 .bootcamps--container-right {
     max-width: 1400px;
-    margin: 2em auto;
+    margin: 3em auto 0 auto;
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -546,15 +542,6 @@ header {
     }
 }
 
-.section-subtitle--projects {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    position: relative;
-    width: 100%;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
 .my-projects {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -565,7 +552,7 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 3em auto 0 auto;
     gap: 1.5em;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     max-width: 1800px;
@@ -575,6 +562,16 @@ header {
     .portfolio {
         grid-template-columns: repeat(auto-fill, 100%);
     }
+}
+
+.section-subtitle--projects {
+    text-align: center;
+    box-shadow: var(--bs);
+    border-radius: 7px;
+    font-size: var(--ff-secondary);
+    color: var(--clr-dark);
+    width: fit-content;
+    margin: 0 auto;
 }
 .portfolio-item-container {
     background: var(--clr-light);
