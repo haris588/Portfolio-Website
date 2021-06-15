@@ -969,7 +969,7 @@ header {
     font-size: var(--fs-h3);
     margin: 0 auto;
     max-width: 1400px;
-    border-right: 25px solid var(--clr-dark);
+    border-left: 25px solid var(--clr-dark);
 }
 
 footer img {
@@ -1028,6 +1028,6 @@ footer img {
         border-left: 15px solid var(--clr-dark);
     }
     .footer { 
-        border-right: 0;
+        border-left: 0;
     }
 }
