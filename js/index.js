@@ -12,7 +12,7 @@ navLinks.forEach(link => {
   })
 })
 
-const animateIntro= () => {
+const animateIntro = () => {
   window.addEventListener("load", () => {
     document.querySelector('.intro-img').classList.add('toTop')
     document.querySelector('.section-subtitle--intro').classList.add('width')
