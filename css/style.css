@@ -981,8 +981,8 @@ header {
 }
 
 footer img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .footer img:hover {
@@ -1007,21 +1007,17 @@ footer img {
     text-decoration: underline;
 }
 
-.footer-title {
-    padding: 0.4em;
-    font-size: 1rem;
-}
-
 .social-list {
     margin: 0.5em auto;
     max-width: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .social-list--item {
-    padding: 0.1em;
+   
+    margin: 0 6px;
 }
 
 .social-list--item:focus {
